@@ -6,3 +6,20 @@
     clear: both;
   }
 }
+
+// Gradient Text
+@mixin gradient-text {
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+// Hover effect
+@mixin hover-up {
+  transform: translateY(-1.5rem) scale(1.03);
+}
